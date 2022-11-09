@@ -132,6 +132,8 @@ public class EmployeeService {
 
         for(Employee employee : employees){
             EmployeeDto employeeDto = new EmployeeDto();
+
+            employeeDto.setId(String.valueOf(employee.getId()));
             employeeDto.setFirstName(employee.getFirstName());
             employeeDto.setLastName(employee.getLastName());
             employeeDto.setPhoneNumber(String.valueOf(employee.getPhoneNumber()));
